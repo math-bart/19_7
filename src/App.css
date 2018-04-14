@@ -1,5 +1,12 @@
+body {
+	background: linear-gradient(#e0fafc, #b5f7fc);
+	color: #015156;
+	min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -28,18 +35,54 @@
 }
 
 li {
-	margin: 30px;
-	background: #ddd;
+	margin: 40px auto;
+	background: #7cf1f9;
 	padding: 20px;
-	width: 50%;
+	width: 500px;
 	list-style: none;
+	border-radius: 30px;
+	position: relative;
+}
+
+li::before {
+	content:"";
+	position: absolute;
+	bottom: -14px;
+	right: 20px;
+	width: 55px;
+	height: 55px;
+	background-color: #7cf1f9;
+	transform: rotate(23deg);
+    
 }
 
 li button {
 	margin: 20px 5px 0;
 	min-width: 25px;
+	cursor: pointer;
+	border: 1px solid #015156;
+	background: #b5f7fc;
+}
+
+li button:hover {
+	background: #e0fafc
 }
 
 .edit {
 	margin-left: 100px;
+}
+
+.new {
+	height: 40px;
+	background: linear-gradient(#b5f7fc, #7cf1f9);
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	color: #015156;
+	border-radius: 10px;
+}
+
+.new:hover {
+	background: linear-gradient(#7cf1f9, #b5f7fc);
 }
