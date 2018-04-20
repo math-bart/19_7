@@ -86,3 +86,10 @@ li button:hover {
 .new:hover {
 	background: linear-gradient(#7cf1f9, #b5f7fc);
 }
+
+textarea {
+    resize: none;
+	display: block;
+	margin: 20px auto;
+	background: #b5f7fc;
+}

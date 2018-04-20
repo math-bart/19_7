@@ -7,11 +7,9 @@ import {THUMB_DOWN_COMMENT} from './actions';
 function comments(state = [], action) {
 	switch(action.type) {
 		case ADD_COMMENT:
-			var newCom = prompt('Edit your comment');
 			return [{
 				id: action.id,
-				//text: action.text,
-				text: newCom,
+				text: action.text,
 				votes: 0
 			}
 			, ...state];
