@@ -5,6 +5,8 @@ export const REMOVE_COMMENT = 'REMOVE_COMMENT';
 export const EDIT_COMMENT = 'EDIT_COMMENT';
 export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
+export const CHANGE_INPUT = 'CHANGE_INPUT';
+export const CLEAR_INPUT = 'CLEAR_INPUT';
 
 function randomString() {
     var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
@@ -49,5 +51,19 @@ export function thumbDownComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
         id
+    }
+}
+
+export function changeInput(text) {
+    return {
+        type: CHANGE_INPUT,
+        text
+    }
+}
+
+export function clearInput(text) {
+    return {
+        type: CLEAR_INPUT,
+        text
     }
 }
